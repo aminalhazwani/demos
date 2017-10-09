@@ -1,2 +1,3 @@
-# demos
-A space for quickly put online thinks I work on
+# Demos
+
+A space for quickly put online stuff I work on. Cheers.
