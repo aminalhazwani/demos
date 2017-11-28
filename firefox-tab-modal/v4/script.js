@@ -116,7 +116,7 @@ function showSmallModal(tabModal, tabSeparator, tabContent, tabOverlay, tabModal
     TweenLite.to(modal, 0.2, {
       height: tabModalSize,
       width: 320,
-      left: 148,
+      left: 132,
       ease: new Ease(BezierEasing.css[timingFunction])
     });
     TweenLite.to(overlay, 1, {
