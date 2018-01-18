@@ -7,7 +7,7 @@
 
 section {
   position: relative;
-  width: 300px;
+  width: 2800px;
   height: 32px;
   margin-bottom: 32px;
 }
@@ -17,7 +17,7 @@ input {
   top: 0;
   left: 0;
   padding: 0 28px 0 8px;
-  width: 300px;
+  width: 280px;
   height: 32px;
   font-size: 13px;
   border-radius: 2px;
