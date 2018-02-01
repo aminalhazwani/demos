@@ -1,0 +1,22 @@
+button {
+  background-color: var(--grey-90-a10);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 15px;
+  height: 32px;
+  padding: 0 16px;
+}
+
+button:hover {
+  background-color: var(--grey-90-a20);
+}
+
+button:active {
+  background-color: var(--grey-90-a30);
+}
+
+button[disabled] {
+  background-color: var(--grey-90-a10);
+  opacity: 0.4;
+  cursor: not-allowed;
+}

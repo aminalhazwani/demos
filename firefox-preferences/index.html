@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Preferences</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/checkbox.css">
+  <link rel="stylesheet" href="css/radio.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>General</li>
+      <li>Search Engine</li>
+      <li>Privacy and Security</li>
+      <li>Account</li>
+    </ul>
+  </nav>
+  <main>
+    <input class="search" type="text" placeholder="Search preferences">
+    <h2>Startup</h2>
+    <section>
+      <div>
+        <input type="checkbox">
+        <label for="">Always check if Firefox is your default browser</label>
+      </div>
+    </section>
+    <section>
+      <h3>When Firefox starts</h3>
+      <div>
+        <input type="radio">
+        <label for="">Show your home page</label>
+      </div>
+      <div>
+        <input type="radio">
+        <label for="">Show a blank page</label>
+      </div>
+      <div>
+        <input type="radio">
+        <label for="">Show your windows and tabs from last time</label>
+      </div>
+    </section>
+    <h2>Home page</h2>
+    <section>
+      <div>
+        <input class="flex-grow-1" type="text" placeholder="about:newtab">
+        <button>Use Current Page</button>
+      </div>
+    </section>
+    <h2>Tabs</h2>
+    <section>
+      <div>
+        <input type="checkbox">
+        <label for="">Ctrl+Tab cycles through tabs in recently used order</label>
+      </div>
+      <div>
+        <input type="checkbox">
+        <label for="">Open new windows in a new tab instead</label>
+      </div>
+      <div>
+        <input type="checkbox">
+        <label for="">When you open a link in a new tab, switch to it immediately</label>
+      </div>
+      <div>
+        <input type="checkbox">
+        <label for="">Enable Container Tabs</label>
+        <a href="#!">Learn more</a>
+        <button disabled>Settings...</button>
+      </div>
+    </section>
+    <h2>Language</h2>
+    <section>
+      <div>
+        <label class="flex-grow-1" for="">Choose your preferred language for displaying pages</label>
+        <button>Choose...</button>
+      </div>
+      <div>
+        <input type="checkbox">
+        <label for="">Check your spelling as you type</label>
+      </div>
+    </section>
+    <h2>Downloads</h2>
+    <section>
+      <div>
+        <input type="radio">
+        <label for="">Always ask you where to save files</label>
+      </div>
+      <div>
+        <input type="radio">
+        <label for="">Save files to:</label>
+        <span class="flex-grow-1 grey-50">/Users/Amin/Downloads</span>
+        <button>Choose...</button>
+      </div>
+    </section>
+  </main>
+  <aside></aside>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@import url('https://cdn.rawgit.com/FirefoxUX/design-tokens/master/photon-colors/photon-colors.css');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--grey-10);
+  color: var(--grey-90);
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+nav,
+aside {
+  flex-basis: 25%;
+}
+
+main {
+  background-color: white;
+  border-left: 1px solid var(--grey-20);
+  border-right: 1px solid var(--grey-20);
+  flex-grow: 1;
+  padding-bottom: 48px;
+}
+
+input[type="text"].search {
+  border: none;
+  border-bottom: 1px solid var(--grey-20);
+  height: 48px;
+  font-size: 15px;
+  padding: 16px;
+  width: 100%;
+}
+
+section {
+  border-bottom: 1px solid var(--grey-20);
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+}
+
+section > div:first-of-type {
+  padding: 16px;
+}
+
+section > div:not(:first-of-type) {
+  padding: 0 16px 16px;
+}
+
+section > div > a {
+  flex-grow: 1;
+}
+
+section > div > button {
+  margin: -8px 0;
+}
+
+section > div > input + label {
+  margin-right: 8px;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.grey-50 {
+  color: var(--grey-50);
+}
+
+h2 {
+  border-bottom: 1px solid var(--grey-20);
+  font-weight: 600;
+  padding: 48px 16px 16px 16px;
+}
+
+h3 {
+  color: var(--grey-50);
+  font-weight: 400;
+  margin: 16px 8px 0px 16px;
+}
+
+a {
+  color: var(--blue-50);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue-60);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--blue-70);
+}
