@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/checkbox.css">
   <link rel="stylesheet" href="css/radio.css">
   <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/switch.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -27,29 +28,29 @@
     <h2>Startup</h2>
     <section>
       <div>
-        <input type="checkbox">
-        <label for="">Always check if Firefox is your default browser</label>
+        <label class="flex-grow" for="">Always check if Firefox is your default browser</label>
+        <input class="switch" type="checkbox">
       </div>
     </section>
     <section>
       <h3>When Firefox starts</h3>
       <div>
-        <input type="radio">
-        <label for="">Show your home page</label>
+        <input id="show-your-home-page" type="radio" name="when-firefox-starts" checked>
+        <label for="show-your-home-page">Show your home page</label>
       </div>
       <div>
-        <input type="radio">
-        <label for="">Show a blank page</label>
+        <input id="show-a-blank-page" type="radio" name="when-firefox-starts">
+        <label for="show-a-blank-page">Show a blank page</label>
       </div>
       <div>
-        <input type="radio">
-        <label for="">Show your windows and tabs from last time</label>
+        <input id="show-your-windows-and-tabs-from-last-time" type="radio" name="when-firefox-starts">
+        <label for="show-your-windows-and-tabs-from-last-time">Show your windows and tabs from last time</label>
       </div>
     </section>
     <h2>Home page</h2>
     <section>
       <div>
-        <input class="flex-grow-1" type="text" placeholder="about:newtab">
+        <input class="flex-grow" type="text" placeholder="about:newtab">
         <button>Use Current Page</button>
       </div>
     </section>
@@ -77,28 +78,127 @@
     <h2>Language</h2>
     <section>
       <div>
-        <label class="flex-grow-1" for="">Choose your preferred language for displaying pages</label>
-        <button>Choose...</button>
+        <label class="flex-grow" for="">Choose your preferred language for displaying pages</label>
+        <button style="padding: 0;">
+          <img src="images/arrowhead-down.svg" style="margin-top: 4px;" alt="">
+        </button>
       </div>
+    </section>
+    <section>
       <div>
-        <input type="checkbox">
-        <label for="">Check your spelling as you type</label>
+        <label class="flex-grow" for="">Check your spelling as you type</label>
+        <input class="switch" type="checkbox">
       </div>
     </section>
     <h2>Downloads</h2>
     <section>
       <div>
-        <input type="radio">
+        <input type="radio" name="downloads">
         <label for="">Always ask you where to save files</label>
       </div>
       <div>
-        <input type="radio">
+        <input type="radio" name="downloads">
         <label for="">Save files to:</label>
-        <span class="flex-grow-1 grey-50">/Users/Amin/Downloads</span>
+        <span class="flex-grow grey-50">/Users/Amin/Downloads</span>
         <button>Choose...</button>
       </div>
     </section>
+    <h2>Applications</h2>
+    <section>
+      <div>
+        <label for="">Choose how Nightly handles the files you download from the web or the applications you use while browsing.</label>
+        <button style="padding: 0;">
+          <img src="images/arrowhead-down.svg" style="margin-top: 4px;" alt="">
+        </button>
+      </div>
+    </section>
+    <h2>Digital Rights Managment (DRM) Content</h2>
+    <section>
+      <div>
+        <label for="">Play DRM-controlled content</label>
+        <a class="flex-grow" href="#!">Learn more</a>
+        <input class="switch" type="checkbox">
+      </div>
+    </section>
+    <h2>Firefox Updates</h2>
+    <section>
+      <div>
+        <label class="flex-grow" for="">Keep Nightly up to date for the best performance, stability, and security.</label>
+        <button class="flex-no-shrink">Check for updates</button>
+      </div>
+    </section>
+    <section>
+      <h3>Allow Firefox to</h3>
+      <div>
+        <input type="radio" name="allow-firefox-to" checked>
+        <label for="">Automatically install updates (recommended)</label>
+      </div>
+      <div>
+        <input type="radio" name="allow-firefox-to">
+        <label for="">Check for updates but let you choose to install them</label>
+      </div>
+      <div>
+        <input type="radio" name="allow-firefox-to">
+        <label for="">Never check for updates (not recommended)</label>
+      </div>
+    </section>
+    <section>
+      <div>
+        <label class="flex-grow" for="">Automatically update search engines</label>
+        <input class="switch" type="checkbox">
+      </div>
+    </section>
+    <h2>Performance</h2>
+    <section>
+      <div class="flex-wrap">
+        <label class="flex-grow" for="">Use recommended performance settings</label>
+        <input class="switch" type="checkbox">
+        <small>These settings are tailored to your computer’s hardware and operating system.</small>
+      </div>
+    </section>
+    <h2>Browsing</h2>
+    <section>
+      <div>
+        <input type="checkbox" checked>
+        <label class="flex-grow" for="">Use autoscrolling</label>
+      </div>
+      <div>
+        <input type="checkbox" checked>
+        <label class="flex-grow" for="">Use smooth scrolling</label>
+      </div>
+      <div>
+        <input type="checkbox">
+        <label class="flex-grow" for="">Always use the cursor keys to navigate within pages</label>
+      </div>
+      <div>
+        <input type="checkbox">
+        <label class="flex-grow" for="">Search for text when you start typing</label>
+      </div>
+    </section>
+    <h2>Network Proxy</h2>
+    <section>
+      <div>
+        <label for="" class="flex-grow">Configure how Firefox connects to the internet</label>
+        <button class="flex-no-shrink" style="padding: 0">
+          <img src="images/arrowhead-down.svg" style="margin-top: 4px;" alt="">
+        </button>
+      </div>
+    </section>
   </main>
-  <aside></aside>
+  <aside>
+    <ul>
+      <li>Startup</li>
+      <li>Home page</li>
+      <li>Tabs</li>
+      <li>Language</li>
+      <li>Downloads</li>
+      <li>Applications</li>
+      <li>DRM Content</li>
+      <li>Firefox Updates</li>
+      <li>Performance</li>
+      <li>Browsing</li>
+      <li>Network Proxy</li>
+    </ul>
+  </aside>
 </body>
 </html>
