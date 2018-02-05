@@ -9,6 +9,14 @@ input[type="radio"] {
   border-radius: 50%;
 }
 
+input[type="radio"]:hover {
+  background-color: var(--grey-90-a20);
+}
+
+input[type="radio"]:hover:active {
+  background-color: var(--grey-90-a30);
+}
+
 input[type="radio"]::before {
   content: " ";
   position: absolute;
